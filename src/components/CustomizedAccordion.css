@@ -1,0 +1,31 @@
+.accordion__summaryContainer {
+    background-color: #7fad39 !important;
+}
+.accordion__summaryContainer:hover {
+    background-color: #7c9473 !important;
+}
+
+.accordion__summary {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+.accordion__contents {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+.accordion__content {
+    display: flex;
+    flex: 1;
+    padding: 5px;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.accordion__content:hover {
+    color: #7fad39;
+}

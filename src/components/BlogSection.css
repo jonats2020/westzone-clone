@@ -1,0 +1,13 @@
+.blogSection {
+    text-align: center;
+    font-weight: 700;
+    padding: 20px;
+    /* background-color: #cfdac8; */
+}
+
+.blog__container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}

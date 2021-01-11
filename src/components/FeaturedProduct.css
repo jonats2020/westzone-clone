@@ -1,0 +1,35 @@
+.featuredProduct {
+    text-align: center;
+    font-weight: 700;
+    background-color: #cfdac8;
+    padding: 20px;
+    color: white;
+}
+
+.products__container {
+    display: flex;
+    padding-top: 40px;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    /* background-color: #cfdac8; */
+}
+
+.rec-arrow:hover {
+    color: #7c9473 !important;
+}
+
+/* .rec-arrow {
+    background-color: transparent;
+    color: black !important;
+} */
+
+.rec-arrow:enabled {
+    background-color: white !important;
+    color: #cfdac8 !important;
+}
+
+.rec-dot {
+    box-shadow: 0 0 1px 3px #cfdac8;
+    background-color: white !important;
+}

@@ -1,0 +1,10 @@
+.onSale {
+    padding: 20px;
+    text-align: center;
+}
+
+.onSale__container {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 40px;
+}

@@ -1,0 +1,60 @@
+.header {
+    background-color: #F5F5F5;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1080px;
+    font-size: 14px;
+    background-color: white;
+    padding-top: 20px;
+}
+
+.header__companyLogo {
+    flex: 0.3;
+    cursor: pointer;
+}
+
+.header__navLinks {
+    display: flex;
+    justify-content: space-around;
+    
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.header__navLink {
+    /* margin-left: 10px; */
+    padding: 10px;
+}
+
+.header__navlink__active {
+    color: #7fad39;
+}
+
+.header__navLink:hover {
+    color:  #7fad39;
+    cursor: pointer;
+}
+
+.header__shoppingCart {
+    display: flex;
+    align-items: center;
+}
+
+.header__shoppingCartIcons > * {
+    margin-right: 10px;
+}
+
+.header__login {
+    display: flex;
+    align-items: center;
+}
+
+.header__shoppingCart > div {
+    margin-right: 10px;
+}

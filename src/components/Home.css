@@ -1,0 +1,82 @@
+.home {
+    background-color: #F5F5F5;
+}
+
+.home__container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1080px;
+    background-color: white;
+}
+
+.home__searchContainer {
+    display: flex;
+    padding: 20px;
+}
+
+.home__categorySelect {
+    flex: 0.7;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.home__search {
+    flex: 1;
+    display: flex;
+    align-items: center;
+}
+
+.home__search > input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, .125);
+    outline: none;
+    box-shadow: 0px 5px 8px -9px rgba(0,0,0,0.75);
+}
+
+.home__search > button {
+    padding:10px;
+    border: 1px solid rgba(0, 0, 0, .125);
+    background-color: #7fad39;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    box-shadow: 0px 5px 8px -9px rgba(0,0,0,0.75);
+}
+
+.home__search > button:hover {
+    background-color: #7c9473;
+}
+
+.home__departmentSelect {
+    flex: 0.3;
+}
+
+.home__contact {
+    display: flex;
+    align-items: center;
+}
+
+.categorySelectTop {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.contact__details {
+    margin-left: 10px;
+}
+
+.contact__detailsTop{
+    font-weight: 700;
+}
+
+.contact__detailsBottom {
+    color: darkgray;
+}
+
+.categorySelectBottom {
+    padding: 5px;
+}

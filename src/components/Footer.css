@@ -1,0 +1,62 @@
+.footer {
+    background-color: #F5F5F5;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 32px;
+    color: #374045;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1080px;
+    font-size: 14px;
+    background-color: white;
+    padding-top: 20px;
+    background-color: #cfdac8;
+    padding-bottom: 20px;
+}
+
+
+.footer__companyDetails > img {
+    object-fit: contain;
+}
+
+.footer__companyDetails ul li {
+    list-style: none;
+}
+
+.footer__usefulLinks1 {
+    display: flex;
+}
+
+.footer__usefulLinks h4 {
+    margin-left: 10px;
+}
+
+.footer__usefulLinks1 div ul li {
+    list-style: none;
+    margin-left: 10px;
+}
+
+.footer__newsletter > input {
+    width: 60%;
+    border: none;
+    outline: none;
+    padding: 10px;
+}
+
+.footer__newsletter > button {
+    padding: 10px 20px;
+    background-color: #7c9473;
+    color: white;
+    border: none;
+    font-weight: 700;
+}
+
+.footer__newsletter > button:hover {
+    background-color: #cfdac8;
+    cursor: pointer;
+}
