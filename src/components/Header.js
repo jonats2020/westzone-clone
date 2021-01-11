@@ -1,13 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "./Header.css";
-import { makeStyles } from '@material-ui/core/styles';
+// import { makeStyles } from '@material-ui/core/styles';
 import Badge from '@material-ui/core/Badge';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import ShoppingBasketIcon from '@material-ui/icons/ShoppingBasket';
 import PersonIcon from '@material-ui/icons/Person';
 import { Link } from 'react-router-dom';
+import { useStateValue } from '../services/StateProvider';
+import { getBasketTotal } from '../services/reducer';
 
 function Header() {
+
+    const [{basket, favorites}, dispatch] = useStateValue();
+    const [open, setOpen] = useState(false);
+
+    const Login = (e) => {
+        e.preventDefault();
+    }
+
+    // Handles login modal form open and close
+    const handleOpen = () => {
+        setOpen(true);
+      };
+    
+    const handleClose = () => {
+        setOpen(false);
+    };
 
     return (
         <div className="header">
@@ -29,20 +47,20 @@ function Header() {
 
                 <div className="header__shoppingCart">
                         <div className="header__shoppingCartIcons">
-                            <Badge badgeContent={4} color="secondary">
+                            <Badge badgeContent={favorites?.length} color="secondary">
                                 <FavoriteIcon />
                             </Badge>
-                            <Badge badgeContent={4} color="secondary">
+                            <Badge badgeContent={basket?.length} color="secondary">
                                 <ShoppingBasketIcon />
                             </Badge>
                         </div>
 
                         <div className="header__shoppingCartTotal">
                             <span>item: </span>
-                            <span><strong>AED 150.00</strong></span>
+                            <span><strong>{Intl.NumberFormat('en-US', { style: 'currency', currency: 'AED' }).format(getBasketTotal(basket))}</strong></span>
                         </div>
 
-                        <div className="header__login">
+                        <div className="header__login" onClick={Login}>
                         <PersonIcon /> Login
                             
                         </div>

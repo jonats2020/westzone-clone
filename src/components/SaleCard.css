@@ -63,3 +63,9 @@
     /* -webkit-transform: rotate(360deg); */
     
 }
+
+.saleCard__notification {
+    position: static;
+    top: 10px;
+    right: 10px;
+}

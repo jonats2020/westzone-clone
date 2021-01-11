@@ -53,8 +53,18 @@
 .header__login {
     display: flex;
     align-items: center;
+    cursor: pointer;
+}
+
+.header__login:hover {
+    color: #7fad39;
 }
 
 .header__shoppingCart > div {
     margin-right: 10px;
+}
+
+.MuiBadge-badge {
+    background-color: #7c9473 !important;
+    ;
 }

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import CustomizedAccordions from './CustomizedAccordion';
 import "./Home.css";
 
@@ -9,6 +9,10 @@ import CallIcon from '@material-ui/icons/Call';
 import FeaturedProduct from './FeaturedProduct';
 import BlogSection from './BlogSection';
 import OnSale from './OnSale';
+
+// const LazyFeatureProduct = lazy(() => import("./FeaturedProduct"));
+// const LazyBlogSection = lazy(() => import("./BlogSection"));
+// const LazyOnSale = lazy(() => import("./OnSale"));
 
 function Home() {
 
@@ -54,6 +58,18 @@ function Home() {
             <FeaturedProduct />
             <OnSale />
             <BlogSection />
+
+            {/* <Suspense fallback={<div>Loading...</div>}>
+                {LazyFeatureProduct}
+            </Suspense>
+
+            <Suspense fallback={<div>Loading...</div>}>
+                {LazyBlogSection}
+            </Suspense>
+
+            <Suspense fallback={<div>Loading...</div>}>
+                {LazyOnSale}
+            </Suspense> */}
 
             
                 

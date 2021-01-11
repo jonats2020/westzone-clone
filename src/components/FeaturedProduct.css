@@ -30,6 +30,10 @@
 }
 
 .rec-dot {
-    box-shadow: 0 0 1px 3px #cfdac8;
+    box-shadow: 0 0 1px 3px #cfdac8 !important;
     background-color: white !important;
+}
+
+.rec-dot_active {
+    box-shadow: 0 0 1px 3px #7c9473 !important;
 }

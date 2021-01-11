@@ -35,7 +35,7 @@ function Footer() {
                             <ul>
                                 <li>Who We Are</li>
                                 <li>Our Services</li>
-                                <li>Porjects</li>
+                                <li>Projects</li>
                                 <li>Contact</li>
                                 <li>Innovation</li>
                                 <li>Testimonials</li>
