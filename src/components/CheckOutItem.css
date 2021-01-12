@@ -1,0 +1,12 @@
+
+.item__container { 
+    display: flex;
+}
+
+.item__image {
+    flex: 0.4
+}
+
+.item__info {
+    flex: 0.6;
+}

@@ -32,12 +32,17 @@
     padding: 10px;
 }
 
+.header__navLink a {
+    text-decoration: none;
+    color: #7fad39 !important;
+}
+
 .header__navlink__active {
-    color: #7fad39;
+    color: #7fad39 !important;
 }
 
 .header__navLink:hover {
-    color:  #7fad39;
+    color:  #7fad39 !important;
     cursor: pointer;
 }
 
@@ -48,6 +53,14 @@
 
 .header__shoppingCartIcons > * {
     margin-right: 10px;
+}
+
+a .MuiSvgIcon-root {
+    color: black !important;
+}
+
+a .MuiSvgIcon-root:hover {
+    color: #7c9473 !important;
 }
 
 .header__login {

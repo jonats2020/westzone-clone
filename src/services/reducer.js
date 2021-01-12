@@ -22,9 +22,13 @@ let newFavorites;
 
 
 const reducer = (state, action) => {
+
+    // console.log("reducer state >> ", state);
+    // console.log("reducer action >> ", action.type);
+
     switch(action.type) {
         case "ADD_TO_BASKET":
-            console.log("basket >> ", state.basket)
+            // console.log("basket >> ", state.basket)
             return {
                 ...state,
                 basket: [...state.basket, action.item],
@@ -41,6 +45,10 @@ const reducer = (state, action) => {
                 (basketItem) => basketItem.id === action.id
             );
             let newBasket = [...state.basket];
+
+            // console.log("newBasket >> ",newBasket);
+            // console.log("action.id >> ",action.id);
+
 
             if (index >= 0) {
                 newBasket.splice(index,1);

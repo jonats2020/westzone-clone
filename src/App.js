@@ -1,10 +1,12 @@
 import { useEffect } from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import './App.css';
+import CheckOut from "./components/CheckOut";
 import Footer from "./components/Footer";
 
 import Header from './components/Header';
 import Home from './components/Home';
+import Orders from "./components/Orders";
 import { auth } from "./services/firebase";
 import { useStateValue } from "./services/StateProvider";
 
@@ -42,6 +44,9 @@ function App() {
       <Header />
       <div className="app">
         <Route exact path="/" component={Home} />
+        <Route exact path="/orders" component={Orders} />
+        <Route exact path="/checkout" component={CheckOut} />
+
       {/* <Body /> */}
       {/* <Footer /> */}
       </div>

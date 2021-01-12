@@ -1,0 +1,46 @@
+.basket__itemImage img {
+    width: 180px;
+    object-fit: contain;
+}
+
+.orderItem__item {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    border-top: 1px solid #cdd0cb;
+}
+
+.orderItem__headerBottom p {
+    text-align: right;
+    flex: 1;
+}
+
+.orderItem__itemDescription {
+    line-height: 24px;
+    flex: 1;
+    padding-left: 10px;
+}
+
+.orderItem__itemDescription p {
+    font-weight: 400;
+    font-size: 12px;
+    color: #565959!important;
+}
+
+.orderItem__itemDescription h4 {
+    color: #7c9473;
+    font-size: 18px;
+}
+
+.orderItem__itemDescription .MuiButton-root {
+    background-color: #e8eae6;
+    padding: 3px 4px;
+    font-size: 12px;
+    color: #7c9473;
+}
+
+.orderItem__itemPrice {
+    color: #0F1111;
+    font-weight: 700;
+    font-size: 18px;
+}

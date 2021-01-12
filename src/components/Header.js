@@ -29,7 +29,7 @@ function Header() {
 
     return (
         <div className="header">
-            <p>This is a demo website - Nats </p>
+            <p>Disclaimer: This is a demo website and created for presentation purposes only. For more information on this website, <Link to="https://bit.ly/2X5YAYR">click here</Link></p>
 
             <div className="header__container">
                 <div className="header__companyLogo">
@@ -38,7 +38,7 @@ function Header() {
                 </div>
 
                 <div className="header__navLinks">
-                        <div className="header__navLink header__navlink__active">HOME</div>
+                        <div className="header__navLink header__navlink__active"><Link to="/">HOME</Link></div>
                         <div className="header__navLink">SHOP</div>
                         <div className="header__navLink">PAGES</div>
                         <div className="header__navLink">BLOG</div>
@@ -51,7 +51,7 @@ function Header() {
                                 <FavoriteIcon />
                             </Badge>
                             <Badge badgeContent={basket?.length} color="secondary">
-                                <ShoppingBasketIcon />
+                                <Link to="/orders"><ShoppingBasketIcon /></Link>
                             </Badge>
                         </div>
 

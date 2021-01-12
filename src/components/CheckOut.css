@@ -1,0 +1,48 @@
+.checkout {
+    background-color: #F5F5F5;
+}
+
+.checkout__container {
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1080px;
+}
+
+.checkout__header {
+    text-align: center;
+    border-bottom: 1px solid #e8eae6;
+}
+
+.checkout__delivery {
+    padding: 20px;
+    display: flex;
+}
+
+.delivery__left {
+    flex: 0.4;
+}
+
+.checkout__review {
+    padding: 20px;
+    display: flex;
+    border-top: 1px solid #e8eae6;
+}
+
+.review__left {
+    flex: 0.6;
+}
+
+
+.item__image img {
+    width: 200px;
+    object-fit: contain;
+}
+
+.checkout__card {
+    padding: 20px;
+}
+
+.card__left {
+    flex: 0.4;
+}

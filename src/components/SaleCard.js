@@ -5,7 +5,7 @@ import { Button, Snackbar } from '@material-ui/core';
 import FavoriteBorderIcon from '@material-ui/icons/FavoriteBorder';
 import FavoriteIcon from '@material-ui/icons/Favorite';
 import { useStateValue } from '../services/StateProvider';
-import { isLiked } from '../services/reducer';
+import { Link } from 'react-router-dom';
 
 function SaleCard( {id, imageUrl, title, price, bestSeller}) {
 
@@ -71,7 +71,11 @@ function SaleCard( {id, imageUrl, title, price, bestSeller}) {
                     anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
                     open={open}
                     onClose={handleClose}
-                    message="Added item to basket"
+                    message={
+                    <div>
+                        <span className="saleCard__notificationMessage">Item added to basket. Review your <Link to="/orders">Orders</Link>.</span>
+                    </div>
+                    }
                     // key={vertical + horizontal}
                 />
             </div>
