@@ -79,5 +79,29 @@ a .MuiSvgIcon-root:hover {
 
 .MuiBadge-badge {
     background-color: #7c9473 !important;
-    ;
+}
+
+.login__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 60vh;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.login__form input {
+    padding: 10px 14px;
+    outline: none;
+    
+}
+
+.login__form .MuiButton-root {
+    background-color: #7c9473;
+    color: white;
+}
+
+.login__form .MuiButton-root:hover {
+    background-color: #cfdac8;
+    color: #7c9473;
 }
